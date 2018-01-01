@@ -136,6 +136,7 @@ a:hover{
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
+    opacity: 0.8
 }
 #menuToggle input{
     display: block;
