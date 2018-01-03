@@ -100,9 +100,10 @@ canvas{
   background-repeat: no-repeat;
 }
 .monument{
-  width: 50vh;
+  width: 250px;
   height: auto;
-  background-size: cover;
+  background-size:contain;
+  background-position: center;
   background-repeat: no-repeat;
   margin-top: 10% !important;
   vertical-align: center;
@@ -191,7 +192,7 @@ a:hover{
     width: 100vw;
     height:100vh;
     margin: -100px 0 0 -50px;
-    padding: 50px;
+    padding:50px;
     padding-top: 125px;
     background-color: #ffffff;
     list-style-type: none;
@@ -204,7 +205,7 @@ a:hover{
     padding: 10px 0;
     font-size: 22px;
 }
-#menuToggle input:checked ~ div{
+#menuToggle input:checked ~ ul{
     transform: scale(1.0, 1.0);
     opacity: 1;
 }

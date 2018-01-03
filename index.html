@@ -15,9 +15,15 @@
       <span></span>
       <span></span>
       <span></span>
-      <div id="menu">
-        
-      </div>
+      <ul id="menu">
+        <center>
+        <li><a href="#" id = "firstLink">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        </center>
+      </ul>
     </div>
     </nav>
   <div class="reveal">
@@ -35,19 +41,19 @@
       </section>
       <section>
         <div class="tab">
-        <div class="monument"></div>
+        <div class="monument" style="background-image:url(public/images/landmarks/gatewayofindia.png);"></div>
         <div class="content"></div>
         </div>
       </section>
       <section>
         <div class="tab">
-        <div class="monument"></div>
+        <div class="monument" style="background-image:url(public/images/landmarks/rajabaitower.png);"></div>
         <div class="content"></div>
         </div>
       </section>
       <section>
         <div class="tab">
-        <div class="monument"></div>
+        <div class="monument" style="background-image:url(public/images/landmarks/sealink.png);"></div>
         <div class="content"></div>
         </div>
       </section>
@@ -90,6 +96,16 @@
   VanillaTilt.init(document.querySelectorAll(".monument"), {
     max: 25,
     speed: 400
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#firstLink").mouseover(function(){
+      $("#menu").css('background-color','blue').delay(1000);
+    });
+    $("#firstLink").mouseout(function(){
+      $("#menu").css('background-color','white');
+    });
   });
 </script>
 </body>
