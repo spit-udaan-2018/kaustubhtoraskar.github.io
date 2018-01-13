@@ -99,26 +99,8 @@ canvas{
   background-position: 50% 100%;
   background-repeat: no-repeat;
 }
-.monument{
-  width: 250px;
-  height: auto;
-  background-size:contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top: 10% !important;
-  vertical-align: center;
-}
-.content{
-  width:100vh;
-  height: 500px;
-  background-color: blue;
-}
-.tab{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+
+/* --Navbar Styling --*/
 nav{
     position:fixed;
     z-index: 999
@@ -141,6 +123,12 @@ a:hover{
     -webkit-user-select: none;
     user-select: none;
     opacity: 0.8
+}
+@media only screen and (max-width: 425px) {
+    #menuToggle{
+      top:20px;
+      left: 20px;
+    }
 }
 #menuToggle input{
     display: block;
@@ -208,4 +196,37 @@ a:hover{
 #menuToggle input:checked ~ ul{
     transform: scale(1.0, 1.0);
     opacity: 1;
+}
+.monument{
+  width: 250px;
+  height: auto;
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 10% !important;
+  vertical-align: center;
+}
+
+.content{
+  width:100vh;
+  height: 500px;
+  border:solid blue 1px;
+  display: flex;
+  flex-direction: column;
+  padding :20px 30px !important;
+
+}
+.tab{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.event-poster{
+    height: 100px;
+    width: 150px;  
+    background-color: orange;
+    margin:0px !important;
+
 }
