@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
 body {
-	color: #fff;
 	background-size: cover;
 	background-position: center;
-	font-family: Raleway, sans-serif;
+	font-family: Montserrat !important;
 }
-#logo {
+
+#udaanlogo {
 	position: absolute;
 	top:15%;
 	left:42%;
@@ -63,7 +66,6 @@ canvas{
   text-indent: 4px;
   line-height: 14px;
   padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
 
@@ -198,29 +200,29 @@ a:hover{
     opacity: 1;
 }
 .monument{
-  width: 250px;
+  width: 30vw;
   height: auto;
   background-size:contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 10% !important;
   vertical-align: center;
 }
 
 .content{
-  width:100vh;
+  width:60vw;
   height: 500px;
   border:solid blue 1px;
   display: flex;
   flex-direction: column;
   padding :20px 30px !important;
+  justify-content: center;
 
 }
 .tab{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .event-poster{
@@ -229,4 +231,13 @@ a:hover{
     background-color: orange;
     margin:0px !important;
 
+}
+
+/*---- Contact us page ----*/
+
+@media only screen and (max-width: 425px) {
+    #menuToggle{
+      top:20px;
+      left: 20px;
+    }
 }
