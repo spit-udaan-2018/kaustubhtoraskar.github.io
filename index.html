@@ -67,15 +67,72 @@
       <section>
         <div class="tab">
         <div class="monument" style="background-image:url(public/images/landmarks/gatewayofindia.png);"></div>
-        <div class="content"></div>
+        <div class="content">
+           <h3>TEAM</h3>
+                <div id="team">
+                    <div id="chair" class="fancy-button" data-type="team" data-target="cp">
+                        <p class="title">Chairperson</p>
+                        <p class="name"></p>
+                    </div>
+                    <div id="vicechair">
+                        <div class="fancy-button" data-type="team" data-target="vcp_kd">
+                            <p class="title">Vice Chairperson</p>
+                            <p class="name"></p>
+                        </div>
+                        <div class="fancy-button" data-type="team" data-target="vcp_sc">
+                            <p class="title">Vice Chairperson</p>
+                            <p class="name"></p>
+                        </div>
+                        <div class="fancy-button" data-type="team" data-target="vcp_ak">
+                            <p class="title">Vice Chairperson</p>
+                            <p class="name"></p>
+                        </div>
+                    </div>
+                    <div id="committee">
+                        <div class="fancy-button" data-type="team" data-target="admin">
+                            <p class="name">Admin</p>
+                        </div>
+                        <div class="fancy-button" data-type="team" data-target="events">
+                            <p class="name">Events</p>
+                        </div>
+                        <div class="fancy-button" data-type="team" data-target="security">
+                            <p class="name">Security</p>
+                        </div>
+                        <div class="fancy-button" data-type="team" data-target="hospitality">
+                            <p class="name">Hospitality</p>
+                        </div>
+                        <div class="fancy-button" data-type="team" data-target="tech">
+                            <p class="name">Technical</p>
+                        </div>
+                        <div class="fancy-button" data-type="team" data-target="creative">
+                            <p class="name">Creatives</p>
+                        </div>
+                        <div class="fancy-button" data-type="team" data-target="marketing">
+                            <p class="name">Marketing</p>
+                        </div>
+                        <div class="fancy-button" data-type="team" data-target="public-relations">
+                            <p class="name">Public Relations</p>
+                        </div>
+                        <div class="fancy-button" data-type="team" data-target="social-media">
+                            <p class="name">Social Media</p>
+                        </div>
+                    </div>
+                    <div id="council" class="fancy-button" data-type="team" data-target="student-council">
+                        <p class="name">Student Council</p>
+                    </div>
+                </div>
+        </div>
         </div>
       </section>
+
       <section>
         <div class="tab">
         <div class="monument" style="background-image:url(public/images/landmarks/rajabaitower.png);"></div>
         <div class="content"></div>
         </div>
       </section>
+
+      <!-- Contact Section -->
       <section>
         <div class="tab">
         <div class="monument" style="background-image:url(public/images/landmarks/sealink.png);"></div>
@@ -139,6 +196,11 @@
   VanillaTilt.init(document.querySelectorAll(".monument"), {
     max: 25,
     speed: 400
+  });
+  VanillaTilt.init(document.querySelectorAll(".fancy-button"), {
+    max: 25,
+    speed: 400,
+    scale:1.5
   });
 </script>
 <script type="text/javascript">
