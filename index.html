@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
   <title>UDAAN 2017</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="css/reveal.css">
 <link rel="stylesheet" href="css/owl.carousel.min.css">
 <link rel="stylesheet" href="css/owl.theme.default.min.css">
 <link rel="stylesheet" media="screen" href="css/style.css">
 </head>
 
-<body>
+<body style="margin:0px">
   <nav>
     <div id="menuToggle">
       <input type="checkbox"/>
@@ -32,12 +32,24 @@
     <div class="slides">
       <section id="particles-js">
          <div class="logo-wrapper">
-            <img src="public/images/udaan.png" alt="logo" id="udaanlogo" />
+            <img src="public/images/udaan2.png" alt="logo" id="udaanlogo" />
           </div>  	 
       </section>
-      <section>
+      <section data-background="#5ebed6">
         <div class="tab">
-        <div class="monument" style="background-image:url(public/images/landmarks/cststation.png);"></div>
+        <div class="monument" style="background-image:url(public/images/landmarks/taj.png);"></div>
+        <div class="content"></div>
+        </div>
+      </section>
+      <section data-background="#7ed98d">
+        <div class="tab">
+        <div class="monument" style="background-image:url(public/images/landmarks/oberoi.png);"></div>
+        <div class="content"></div>
+        </div>
+      </section>
+      <section data-background="#486ef5">
+        <div class="tab">
+        <div class="monument" style="background-image:url(public/images/landmarks/sealink.png);"></div>
         <div class="content">
           <h1>Events</h1>
           <div class="owl-carousel owl-theme">
@@ -64,7 +76,7 @@
         </div>
         </div>
       </section>
-      <section>
+      <section data-background="#CDD2D4">
         <div class="tab">
         <div class="monument" style="background-image:url(public/images/landmarks/gatewayofindia.png);"></div>
         <div class="content">
@@ -125,17 +137,17 @@
         </div>
       </section>
 
-      <section>
+      <section data-background="#ffe282">
         <div class="tab">
-        <div class="monument" style="background-image:url(public/images/landmarks/rajabaitower.png);"></div>
+        <div class="monument" style="background-image:url(public/images/landmarks/stoop1.png);"></div>
         <div class="content"></div>
         </div>
       </section>
 
       <!-- Contact Section -->
-      <section>
+      <section data-background="#F3E96B">
         <div class="tab">
-        <div class="monument" style="background-image:url(public/images/landmarks/sealink.png);"></div>
+        <div class="monument" style="background-image:url(public/images/landmarks/best.png);"></div>
         <div class="content">
             <h3>CONTACT</h3>
                 <div class="section-divide text-align">
@@ -197,11 +209,11 @@
     max: 25,
     speed: 400
   });
-  VanillaTilt.init(document.querySelectorAll(".fancy-button"), {
+ /*VanillaTilt.init(document.querySelectorAll(".fancy-button"), {
     max: 25,
     speed: 400,
     scale:1.5
-  });
+  });*/
 </script>
 <script type="text/javascript">
   $(document).ready(function(){
